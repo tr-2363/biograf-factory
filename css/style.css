@@ -1,0 +1,203 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+@font-face {
+	font-family:'OpenSan';
+	src:local('OpenSan-Bold'),
+	url('../fonts/OpenSanBold.woff2') format('woff2'),
+	url('../fonts/OpenSanBold.woff') format('woff');
+	font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family:'OpenSan';
+	src:local('OpenSan-Medium'),
+	url('../fonts/OpenSanMedium.woff2') format('woff2'),
+	url('../fonts/OpenSanMedium.woff') format('woff');
+	font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family:'OpenSan';
+	src:local('OpenSan-Regular'),
+	url('../fonts/OpenSanRegular.woff2') format('woff2'),
+	url('../fonts/OpenSanRegular.woff') format('woff');
+	font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family:'OpenSan';
+	src:local('OpenSan-Light'),
+	url('../fonts/OpenSanLigh.woff2') format('woff2'),
+	url('../fonts/OpenSanLigh.woff') format('woff');
+	font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+	text-decoration: none;
+  color: rgb(177, 12, 108);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+	max-width: 1000px;
+	padding-bottom: 30px;
+	font-family: 'OpenSan', sans-serif; 
+	font-weight: 400;
+} 
+
+.invisible {
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* glob */
+.container {
+  width: 600px;
+  margin: 0 auto; 
+}
+
+.section-title {
+  padding-left: 10px;
+  color: rgb(37, 33, 110);
+  border-left: 4px solid rgb(177, 12, 108);
+}
+
+.descr {
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+}
+
+/* header */
+.header { 
+  padding: 10px 0;
+  background-color: rgb(210, 233, 233);
+}
+
+.header__container {
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.header-logo:focus {
+  outline: 1px solid rgb(177, 12, 108);
+}
+
+.header__item {
+  margin-right: 55px;
+}
+
+.header__link {
+  transition: color .3s ease;
+}
+
+.header__link:focus {
+  outline: 1px solid rgb(177, 12, 108);
+  border-bottom: none;
+}
+
+.header__link:hover {
+ color: rgb(105, 17, 68);
+ border-bottom: 1px solid rgb(105, 17, 68);
+ 
+}
+
+.header__link:active {
+  outline: 1px solid rgb(177, 12, 108);
+  border-bottom: none;
+}
+
+/* hero */
+.hero__container {
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 2rem;
+  color: rgb(37, 33, 110);
+}
+
+.herp__descr {
+  font-style: italic;
+}
+
+/* skills */
+.skills__list {
+  flex-direction: column;
+  padding-left: 10px;
+  color: rgb(177, 12, 108);
+}
+
+/* contacts */
+.contacts__address {
+  justify-content: space-around;
+}
+
+
+.contacts__link:focus {
+  outline: 1px solid rgb(177, 12, 108);
+  border-bottom: none;
+}
+
+
+.contacts__link:hover {
+  color: rgb(105, 17, 68);
+  border-bottom: 1px solid rgb(105, 17, 68);
+}
+
+.contacts__link:active {
+  outline: 1px solid rgb(177, 12, 108);
+  border-bottom: none;
+}
+
+.contacts__link {
+  transition: color .3s ease;
+}
+
+.contacts__span {
+  font-style: initial;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color:rgb(210, 233, 233);
+}
